@@ -1,4 +1,6 @@
-﻿namespace CurrencyConverterExample;
+﻿#nullable disable
+
+namespace CurrencyConverterExample;
 
 public class CurrencyConverter : ICurrencyConverter
 {
@@ -28,7 +30,6 @@ public class CurrencyConverter : ICurrencyConverter
                 if (result.Any())
                 {
                     var rate1 = 0.0;
-                    var rate2 = 0.0;
                     var currency1 = string.Empty;
                     var currency2 = string.Empty;
                     if (result.FirstOrDefault() != null && result.FirstOrDefault().Item3 != 0)
